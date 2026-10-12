@@ -44,11 +44,12 @@ function App() {
   return (
     <div>
       <Header />
+      <main className="contenedor">
       <SearchBar value={busqueda} onChange={setBusqueda} />
       {loading && <Loader />}
       {error && <ErrorMessage message={error} />}
       {!loading && !error && <ProductList products={productosFiltrados} />}
-
+      </main>
       <Footer />
     </div>
   )

@@ -23,6 +23,9 @@ body {
 .header h1 {
   margin: 0;
   font-size: 1.5rem;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor {
@@ -72,4 +75,14 @@ body {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.header-logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  background-color: var(--color-fondo);
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 0.75rem;
 }

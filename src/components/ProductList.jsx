@@ -1,7 +1,8 @@
 import ProductCard from './ProductCard'
+
 function ProductList(props) {
   return (
-<div>
+  <div className="product-grid">
     {props.products.map((producto) => (
       <ProductCard
         key={producto.id}
@@ -9,8 +10,9 @@ function ProductList(props) {
         price={producto.price}
         thumbnail={producto.thumbnail}
       />
-    ))}
-  </div>
-)
+     ))}
+   </div>
+  )
 }
+
 export default ProductList

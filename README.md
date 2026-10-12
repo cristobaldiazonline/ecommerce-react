@@ -1,16 +1,46 @@
-# React + Vite
+# Tienda Neurolex
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Proyecto del Módulo 2: E-commerce en React · Diplomado Fullstack IPSS
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tienda online construida con React que consume la API pública de DummyJSON. Muestra un listado de productos obtenidos dinámicamente, permite buscarlos por nombre y maneja los estados de carga y error con mensajes propios. El diseño es responsivo (mobile first) y usa una paleta de colores y tipografía propias.
 
-## React Compiler
+## Capturas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Vista general**
 
-## Expanding the Oxlint configuration
+![Vista general](docs/vista-general.jpg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Búsqueda funcionando**
+
+![Búsqueda](docs/busqueda.jpg)
+
+## Componentes
+
+- `Header`: logo y nombre de la tienda
+- `SearchBar`: input controlado para buscar por nombre
+- `ProductCard`: muestra un producto recibido por props
+- `ProductList`: renderiza la lista de productos con `.map()`
+- `Loader`: indicador de carga
+- `ErrorMessage`: muestra el error cuando falla la API
+- `Footer`: información básica
+
+## Cómo ejecutar el proyecto
+
+```bash
+git clone https://github.com/cristobaldiazonline/ecommerce-react.git
+cd ecommerce-react
+npm install
+npm run dev
+```
+
+Luego abre la dirección que muestre la terminal (normalmente `http://localhost:5173`).
+
+## Tecnologías
+
+- React
+- Vite
+- JavaScript (fetch + useEffect + useState)
+- CSS propio con variables y media queries
+- API: [DummyJSON](https://dummyjson.com/products)
